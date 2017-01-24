@@ -4,3 +4,13 @@ This is another easy CTF repo.<br>
 	<li>Safe: No root privilege escalation</li> 
 	<li>Simple: only PHP and HTML</li>
 </ul>
+Level: <input type="number" id="n"/><button id="sub">GO!</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#sub").click(function(){
+	var i = $("#n").val()
+        window.location.href = "level" + i
+    }); 
+});
+</script>
