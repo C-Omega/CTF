@@ -1,4 +1,4 @@
 Secret key! <input>
 <?php
-echo "hi"
+echo "<h1>hi</h1>"
 ?>
