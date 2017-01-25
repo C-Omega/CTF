@@ -1,4 +1,5 @@
-Secret key! <input>
+Secret key! <input id="key">
 <?php
-echo "<h1>hi</h1>"
+$key = rand();
+echo '<script>$(document).ready(function(){$("#sub").click(function(){if ($("#key") == ' . $key . '){alert("Correct");} else {alert("Wrong"); });});';
 ?>
