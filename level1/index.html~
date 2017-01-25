@@ -1,0 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+Secret key: <form><input id="key"> <button id="sub" type="submit">Submit</button></form>
+	var key = "' . $key . '"
+	$(document).ready(function()
+	{
+		$("#sub").click(function()
+		{
+			if ($("#key").val() == key)
+			{
+				alert("Correct!");
+			}
+			else
+			{
+				alert("Wrong!");
+			}
+		});
+	});
+</script>';
+?>
