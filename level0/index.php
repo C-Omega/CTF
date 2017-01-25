@@ -4,11 +4,12 @@ Secret key! <input id="key"> <button id="sub">Submit</button>
 $key = rand();
 echo '
 <script>
+	var key = "' . $key . '"
 	$(document).ready(function()
 	{
 		$("#sub").click(function()
 		{
-			if ($("#key").val() == "' . $key . '")
+			if ($("#key").val() == key)
 			{
 				alert("Correct");
 			}
