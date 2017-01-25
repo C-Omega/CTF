@@ -1,6 +1,6 @@
 <?php
 $key = rand();
-$val = $_POST["key"]
+$val = $_POST["key"];
 echo You typed: "$val";
 if ($key == $val)
 {
