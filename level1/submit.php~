@@ -1,5 +1,0 @@
-<?php
-$key = rand();
-echo You typed: $_POST["password"];
-
-?>
