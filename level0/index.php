@@ -7,7 +7,7 @@ echo '
 	{
 		$("#sub").click(function()
 		{
-			if ($("#key").val() == ' . $key . '))
+			if ($("#key").val() == ' . $key . ')
 			{
 				alert("Correct");
 			}
