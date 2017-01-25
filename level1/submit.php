@@ -1,3 +1,5 @@
+RESPONSE:
+
 <?php
 $key = rand();
 $val = $_POST["key"];
