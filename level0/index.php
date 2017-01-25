@@ -1,12 +1,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-Secret key: <input id="key"> <button id="sub">Submit</button>
-<?php
-$key = rand();
-echo '
+Secret key: <input id="key"/> <button id="sub">Submit</button>
 <script>
-	var key = "' . $key . '"
-	$(document).ready(function()
-	{
+var key = <?php echo rand(); ?>;
+$(document).ready(function()
+{
 		$("#sub").click(function()
 		{
 			if ($("#key").val() == key)
@@ -19,5 +16,4 @@ echo '
 			}
 		});
 	});
-</script>';
-?>
+</script>
