@@ -5,5 +5,5 @@ ini_set('display_errors', 1);
 $key = rand();
 $val = $_POST["key"];
 echo "You typed: $val";
-echo ($key === $val) ? "YAY!" : "NO!"
+echo "This is the " . (($key === $val) ? "right" : "password") . " password"
 ?>
